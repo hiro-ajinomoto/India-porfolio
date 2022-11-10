@@ -31,7 +31,7 @@ const About: NextPage = () => {
             <br />
             <br />
             I've been finished a front-end training center in Ho Chi Minh center.
-            You can find the websites at the project.
+            You can find the websites at the Projects.
             <br />
             Have fun :)
          </h6>
