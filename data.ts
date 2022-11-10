@@ -11,36 +11,12 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b> and <b>React.js</b> ",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
-    about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
-  },
-  {
-    Icon: AiOutlineApi,
-    title: "API Development",
-    about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
-  },
-  {
-    Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
-  },
-  {
-    Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
-    about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
-  },
-  {
-    Icon: RiComputerLine,
-    title: "Whatever",
-    about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+    about: "handle database , server, api using <b>Express </b>",
   },
 ];
 
@@ -56,13 +32,23 @@ export const languages: ISkills[] = [
     Icon: BsCircleFill,
   },
   {
-    name: "Nodejs",
+    name: "Node",
     level: "30%",
     Icon: BsCircleFill,
   },
   {
     name: "Html/css",
-    level: "70%",
+    level: "80%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "React",
+    level: "80%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Next",
+    level: "80%",
     Icon: BsCircleFill,
   },
 ];
@@ -75,83 +61,46 @@ export const tools: ISkills[] = [
   },
   {
     name: "Photoshop",
-    level: "70%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Illustrator",
     level: "50%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Framer",
-    level: "70%",
     Icon: BsCircleFill,
   },
 ];
 
 export const projects: IProject[] = [
   {
-    name: "Dev talks React",
-    description: "Lorem ispum sit on the chair",
-    image_path: "https://picsum.photos/250/200",
-    deployed_url: "https://picsum.photos/250/200",
-    github__url: "https://picsum.photos/250/200",
+    name: "Jira clone",
+    description:
+      "This is a clone of jira website which consists of functions such as creating projects, drag and drop tasks, comments ...",
+    image_path: "/../public/jira_clone.png",
+    deployed_url: "https://wooden-letters.surge.sh/",
+    github__url: "",
     category: ["react"],
-    key_techs: ["React", "Typescript", "Material UI"],
+    key_techs: [
+      "React",
+      "redux-saga",
+      "ant-design",
+      "Bootstrap",
+      "react DnD",
+      "Formik and yup",
+    ],
   },
   {
-    name: "Covid tracker Node",
-    description: "Lorem ispum sit on the chair",
-    image_path: "https://picsum.photos/250/200",
-    deployed_url: "https://picsum.photos/250/300",
-    github__url: "https://picsum.photos/250/300",
-    category: ["node"],
-    key_techs: ["React", "Typescript"],
-  },
-  {
-    name: "Covid tracker - react",
-    description: "Lorem ispum sit on the chair",
-    image_path: "https://picsum.photos/250/200",
-    deployed_url: "https://picsum.photos/250/300",
-    github__url: "https://picsum.photos/250/300",
+    name: "Movie website",
+    description:
+      "This website helps users to book movies, help admins to upload , delete, update movies, more and more ...",
+    image_path: "/../public/2.png",
+    deployed_url: "https://cold-burn.surge.sh/",
+    github__url: "",
     category: ["react"],
-    key_techs: ["React", "Typescript"],
+    key_techs: ["React", "redux-thunk", "ant-design"],
   },
   {
-    name: "Vim clear scence React",
-    description: "Lorem ispum sit on the chair",
-    image_path: "https://picsum.photos/250/200",
-    deployed_url: "https://picsum.photos/250/300",
-    github__url: "https://picsum.photos/250/300",
+    name: "Datbike homepage",
+    description: "This is a copy of Datbike homepage",
+    image_path: "/../public/dat_bike.png",
+    deployed_url: "https://datbikee.surge.sh/",
+    github__url: "",
     category: ["react"],
-    key_techs: ["React", "Typescript"],
-  },
-  {
-    name: "Covid tracker",
-    description: "Lorem ispum sit on the chair",
-    image_path: "https://picsum.photos/250/200",
-    deployed_url: "https://picsum.photos/250/300",
-    github__url: "https://picsum.photos/250/300",
-    category: ["react"],
-    key_techs: ["React", "Typescript"],
-  },
-  {
-    name: "Covid tracker",
-    description: "Lorem ispum sit on the chair",
-    image_path: "https://picsum.photos/250/200",
-    deployed_url: "https://picsum.photos/250/300",
-    github__url: "https://picsum.photos/250/300",
-    category: ["node"],
-    key_techs: ["React", "Typescript"],
-  },
-  {
-    name: "Covid tracker",
-    description: "Lorem ispum sit on the chair",
-    image_path: "https://picsum.photos/250/200",
-    deployed_url: "https://picsum.photos/250/300",
-    github__url: "https://picsum.photos/250/300",
-    category: ["node"],
-    key_techs: ["React", "Typescript"],
+    key_techs: ["React", "React-spring"],
   },
 ];

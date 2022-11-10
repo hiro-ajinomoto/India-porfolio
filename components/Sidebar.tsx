@@ -2,6 +2,8 @@ import { useTheme } from 'next-themes'
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai'
 import { GiTie } from 'react-icons/gi'
 import { GoLocation } from 'react-icons/go'
+import Image from 'next/image';
+
 
 const Sidebar = () => {
 
@@ -13,11 +15,16 @@ const Sidebar = () => {
 
    return (
       <div className='dark:text-white'>
-         <img
-            src='https://i.pinimg.com/564x/a2/aa/74/a2aa748b6b183e6dd8e4e42964d1b87e.jpg'
+         <Image
+            src="/../public/avatar.png"
             alt='avatar'
-            className='w-32 h-32 mx-auto border rounded-full '
+            className='mx-auto border rounded-full '
+            height="128px"
+            width="128px"
+            quality="100"
+            layout='intrinsic'
          />
+
          <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
             <span className='text-green '>Phan Hoang</span> Dat
          </h3>
@@ -26,8 +33,8 @@ const Sidebar = () => {
          </p>
          {/* Resume */}
          <a
-            href='/assets/Sumit Dey Resume.pdf'
-            download='Sumit Dey Resume.pdf'
+            href='https://drive.google.com/file/d/1tPHsdHp7YyqdpE4_we4Et6n0ZnRZkac6/view?usp=sharing'
+            // download='Phan Hoang Dat.pdf'
             className='flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 '>
             <GiTie className='w-6 h-6' />
             <span>Download Resume</span>

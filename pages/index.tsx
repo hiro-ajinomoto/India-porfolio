@@ -5,19 +5,35 @@ import {
    GetStaticPropsContext,
    NextPage,
 } from 'next'
+import { motion } from 'framer-motion';
 import ServiceCard from '../components/ServiceCard'
 import { services } from '../data'
 import { Service } from '../types'
+import { fadeInUp, routeAnimation, stagger } from '../styles/animation';
 
 const About: NextPage = () => {
 
    return (
-      <div className='flex flex-col flex-grow px-6 pt-1 dark:text-white'>
+      <motion.div className='flex flex-col flex-grow px-6 pt-1 dark:text-white'
+         variants={routeAnimation}
+         initial="initial"
+         animate="animate"
+         exit="exit"
+      >
          <h6 className='my-3 text-base font-medium'>
-            I am currently pursuing B.Tech Degree(Final Year) in Computer
-            Science Engineering from Academy of Technology. I have 3+ years of
-            experience in Web Development and I have a Youtube Channel where I
-            teach Full Stack Web Development Projects
+            Graduated from education of mathematics but ending up finding no passion in teaching.
+            <br />
+
+            I ran into some codes while making lessons.
+            <br />
+
+            I realized those lines are magic which could create a whole new fantasy world, then ran into it without any consideration.
+            <br />
+            <br />
+            I've been finished a front-end training center in Ho Chi Minh center.
+            You can find the websites at the project.
+            <br />
+            Have fun :)
          </h6>
          <div
             className='flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 '
@@ -26,18 +42,24 @@ const About: NextPage = () => {
                What I am doing
             </h4>
 
-            <div className='grid gap-6 my-3 md:grid-cols-2'>
+            <motion.div className='grid gap-6 my-3 md:grid-cols-2'
+               variants={stagger}
+               initial="initial"
+               animate="animate">
                {/* children's initial and animate property should be same as the parent during a stagger effect  */}
                {services.map(service => (
-                  <div
+                  <motion.div
+                     variants={fadeInUp}
+                     // initial="initial" // now it gets from the parent
+                     // animate="animate"
                      className='col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 dark:bg-black-500 lg:col-span-1 '
                      key={service.title}>
                      <ServiceCard service={service} />
-                  </div>
+                  </motion.div>
                ))}
-            </div>
+            </motion.div>
          </div>
-      </div>
+      </motion.div >
    )
 }
 
